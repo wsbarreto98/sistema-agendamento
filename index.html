@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Sistema de Cadastro</title>
+
+
+
+   <link rel="stylesheet" href="style.css">
+
+  
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Sistema de Cadastro</h2>
+<input id="pesquisa" placeholder="Pesquisar cliente">
+    <input id="nome" placeholder="Digite seu nome">
+    <input id="data" type="date">
+    <input id="servico" placeholder="Digite o serviço">
+    <input id="hora" type="time">
+    <input id="valor" type="number" placeholder="Valor do serviço">
+
+    <button onclick="adicionar()">Cadastrar</button>
+    <h3 id="total">Total: R$ 0</h3>
+
+    <ul id="lista"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
