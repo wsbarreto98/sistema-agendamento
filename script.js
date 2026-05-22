@@ -6,7 +6,14 @@ function adicionar() {
 
   let dataOriginal = document.getElementById("data").value
 
-  let partes = dataOriginal.split("-")
+if (dataOriginal === "") {
+
+  alert("Escolha uma data")
+
+  return
+}
+
+let partes = dataOriginal.split("-")
 
   let data = partes[2] + "/" + partes[1] + "/" + partes[0]
 
