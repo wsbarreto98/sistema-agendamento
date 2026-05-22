@@ -6,6 +6,8 @@ justify-content: center;
 
 align-items: center;
 
+flex-wrap: wrap;
+
 min-height: 100vh;
 
 font-family: Arial;
@@ -17,6 +19,8 @@ background: linear-gradient(
 );
 
 padding: 20px;
+
+gap: 20px;
 
 }
 .container {
@@ -121,11 +125,16 @@ border-radius: 10px;
   .container,
   .editar-container {
 
-    width: 90%;
-    margin-bottom: 20px;
-  }
+background: white;
 
-  input {
-    width: 100%;
-  }
+padding: 25px;
+
+border-radius: 20px;
+
+width: 100%;
+
+max-width: 500px;
+
+box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+
 }
