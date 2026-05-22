@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
 
 display: flex;
@@ -23,6 +29,7 @@ padding: 20px;
 gap: 20px;
 
 }
+
 .container {
 
 background: white;
@@ -59,8 +66,6 @@ padding: 12px;
 
 width: 100%;
 
-box-sizing: border-box;
-
 margin-top: 10px;
 
 font-size: 16px;
@@ -110,51 +115,42 @@ padding: 15px;
 border-radius: 10px;
 
 }
+
 .Concluído {
-  background: #b6ffb6;
-  padding: 10px;
-  border-radius: 10px;
+
+background: #b6ffb6;
+
+padding: 10px;
+
+border-radius: 10px;
+
 }
-@media (max-width: 900px) {
 
-  body {
+.modal {
 
-    flex-direction: column;
+display: none;
 
-    align-items: center;
-  }
+position: fixed;
 
-  .container,
-  .editar-container {
+top: 0;
 
-    width: 100%;
+left: 0;
 
-    max-width: 5body {
+width: 100%;
 
-display: flex;
+height: 100%;
+
+background: rgba(0,0,0,0.5);
 
 justify-content: center;
 
-align-items: flex-start;
+align-items: center;
 
-flex-wrap: wrap;
-
-min-height: 100vh;
-
-font-family: Arial;
-
-background: linear-gradient(
-135deg,
-#4facfe,
-#00f2fe
-);
-
-padding: 20px;
-
-gap: 20px;
+z-index: 1000;
 
 }
-.container {
+
+.modal-content {
 
 background: white;
 
@@ -164,106 +160,28 @@ border-radius: 20px;
 
 width: 100%;
 
-max-width: 500px;
+max-width: 400px;
 
-box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
-
-}
-
-h2 {
-
-text-align: center;
-
-color: #0044ff;
-
-margin-bottom: 20px;
+box-shadow: 0px 0px 25px rgba(0,0,0,0.3);
 
 }
 
-input {
+@media (max-width: 900px) {
 
-border-radius: 10px;
+body {
 
-border: 1px solid #ccc;
+flex-direction: column;
 
-padding: 12px;
+align-items: center;
+
+}
+
+.container {
 
 width: 100%;
 
-box-sizing: border-box;
-
-margin-top: 10px;
-
-font-size: 16px;
+max-width: 450px;
 
 }
-
-button {
-
-border-radius: 10px;
-
-padding: 12px;
-
-background: #0044ff;
-
-color: white;
-
-border: none;
-
-cursor: pointer;
-
-margin-top: 10px;
-
-transition: 0.3s;
-
-font-weight: bold;
-
-}
-
-button:hover {
-
-transform: scale(1.05);
-
-background: #ff0080;
-
-}
-
-li {
-
-margin-top: 15px;
-
-list-style: none;
-
-background: #f5f5f5;
-
-padding: 15px;
-
-border-radius: 10px;
-
-}
-.Concluído {
-  background: #b6ffb6;
-  padding: 10px;
-  border-radius: 10px;
-}
-@media (max-width: 900px) {
-
-  body {
-
-    flex-direction: column;
-
-    align-items: center;
-  }
-
-  .container,
-  .editar-container {
-
-    width: 100%;
-
-    max-width: 450px;
-  }
-
-}px;
-  }
 
 }
